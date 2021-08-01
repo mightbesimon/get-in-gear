@@ -12,12 +12,11 @@
 */
 
 #include <stdio.h>
-// #include <stdlib.h>
 #include <string.h>
 
 // define some contants
 #define MAX_WORD_LENGTH	32
-#define WORDLIST		"../resources/wordlist.txt"
+#define WORDLIST	"/Users/simon/commands/resources/wordlist.txt"
 
 
 /*	checks if a word matches the pattern
@@ -26,8 +25,8 @@ int is_match(char *word, char *pattern)
 {
 	int idx = 0;
 
-	while ((word[idx] != '\0')
-		&& (pattern[idx] != '\0'))
+	while ((pattern[idx] != '\0')
+		   && (word[idx] != '\0'))
 	{
 		
 		if ((pattern[idx] != '-')
